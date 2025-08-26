@@ -4,3 +4,5 @@ modAL
 numpy
 matplotlib
 tqdm
+flask
+flask-cors
