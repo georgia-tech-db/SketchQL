@@ -31,15 +31,24 @@ apt install ffmpeg
 2. Download Model Checkpoint: Download the pre-trained model from [Google Drive](https://drive.google.com/file/d/1MnsQj0xyvVAm87dST1Tmn7_ackWfiLXz/view?usp=sharing) and place it in the `data/model_checkpoint` folder.
 
 ## 🚀 Usage
-
+### Running the main pipeline
 We provide two sample queries `car_left_turn` (Q1.1) and `carstop_personwalk` (Q1.3) for the VIRAT dataset. These sample queries can be viewed at `output/queries/`.
 
-Run the main pipeline: 
+Run the main experiment pipeline to process visual queries and perform similarity search:
 ```bash
 python3 pipeline.py
 
 ```
 The retrieved video clips are saved under `output/query_results/`
+
+### Running the backend server
+For creating queries via drag-and-drop drawing, check out our [SketchQL frontend repository](https://github.com/georgia-tech-db/sketchql-frontend) which provides an intuitive canvas interface.
+
+Start the backend server for frontend integration:
+```bash
+python3 server.py
+
+```
 
 
 ## 📜 Citations
