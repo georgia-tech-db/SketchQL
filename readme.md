@@ -32,13 +32,14 @@ apt install ffmpeg
 
 ## 🚀 Usage
 
-### Running the pipepline
+We provide two sample queries `car_left_turn` (Q1.1) and `carstop_personwalk` (Q1.3) for the VIRAT dataset. These sample queries can be viewed at `output/queries/`.
+
+Run the main pipeline: 
 ```bash
-# Run the main pipeline
 python3 pipeline.py
+
 ```
-- Sample queries: Located at `output/queries/`
-- Results: Retrieved video clips are saved under `output/query_results/`
+The retrieved video clips are saved under `output/query_results/`
 
 
 ## 📜 Citations
