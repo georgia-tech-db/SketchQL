@@ -1,12 +1,11 @@
-# SketchQL: Zero-Shot Video Moment Retrieval with Sketch-Based Queries
+# SketchQL: Video Moment Querying with a Visual Query Interface
 
-## Overview
 Sketch-QL is a video database management system for retrieving video moments with a sketch-based query interface.This interface allows users to specify object trajectory events with simple mouse drag-and-drop operations. Using a pre-trained model that encodes trajectory similarity, Sketch-QL achieves zero-shot video moments retrieval by performing similarity searches over the video to identify clips that are the most similar to the visual query.
 
-## Installation
+## 🛠️ Installation
 
 ### Setup Environment
-```
+```bash
 # Create virtual environment
 python3 -m venv venv
 
@@ -17,7 +16,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ### Install FFmpeg (for video processing)
-```
+```bash
 # MacOS
 brew install ffmpeg
 
@@ -25,16 +24,16 @@ brew install ffmpeg
 apt install ffmpeg
 ```
 
-### Data Preparation
+### 📥 Data Preparation
 1. Download Dataset: Download the traffic dataset from [Google Drive](https://drive.google.com/file/d/1DIy0NOBPTnRaDsnqSl-o1e3vAeFfM3Kz/view?usp=sharing) and place it in the `data/videos/` folder.
 
 
-2. Download Model Checkpoint: Download the pre-trained model from [Google Drive](https://drive.google.com/file/d/1DIy0NOBPTnRaDsnqSl-o1e3vAeFfM3Kz/view?usp=sharing) and place it in the `data/model_checkpoint` folder.
+2. Download Model Checkpoint: Download the pre-trained model from [Google Drive](https://drive.google.com/file/d/1MnsQj0xyvVAm87dST1Tmn7_ackWfiLXz/view?usp=sharing) and place it in the `data/model_checkpoint` folder.
 
-## Usage
+## 🚀 Usage
 
 ### Running the pipepline
-```
+```bash
 # Run the main pipeline
 python3 pipeline.py
 ```
@@ -42,9 +41,9 @@ python3 pipeline.py
 - Results: Retrieved video clips are saved under `output/query_results/`
 
 
-## Citation
+## 📜 Citations
 If you use SketchQL in your research, please cite our work as follows:
-```
+```bibtex
 @article{sketchql,
   author = {Wu, Renzhi and Chunduri, Pramod and Payani, Ali and Chu, Xu and Arulraj, Joy and Rong, Kexin},
   title = {SketchQL: Video Moment Querying with a Visual Query Interface},
