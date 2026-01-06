@@ -36,18 +36,17 @@ We provide two sample queries `car_left_turn` (Q1.1) and `carstop_personwalk` (Q
 
 Run the main experiment pipeline to process visual queries and perform similarity search:
 ```bash
-python3 pipeline.py
-
+python3 pipeline.py --query car_left_turn
+python3 pipeline.py --query carstop_personwalk
 ```
 The retrieved video clips are saved under `output/query_results/`
 
 ### Running the backend server
-For creating queries via drag-and-drop drawing, check out our [SketchQL frontend repository](https://github.com/georgia-tech-db/sketchql-frontend) which provides an intuitive canvas interface.
+For creating queries via drag-and-drop drawing, check out our [SketchQL frontend repository](https://github.com/georgia-tech-db/sketchql-frontend) which provides a canvas interface.
 
 Start the backend server for frontend integration:
 ```bash
 python3 server.py
-
 ```
 
 

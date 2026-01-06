@@ -12,7 +12,7 @@ def normalize(x):
         return x*0
     return (x-np.min(x))/(np.max(x)-np.min(x))
 
-def execute_qeury_multi_obj_sim_search_learned_model(objs_in_video_dict, objs_at_frame, centroids_at_frame, vquery, model_cp_path, device="cuda:0"):
+def execute_query_multi_obj_sim_search_learned_model(objs_in_video_dict, objs_at_frame, centroids_at_frame, vquery, model_cp_path, device="cuda:0"):
     """Run the query with the learned model."""
     model = EncoderModelWrapper(checkpoint_path=model_cp_path, model= EncoderCentroidLarger(), device=device,atten_share=False,n_att=4)
     q_overlap_status = extract_overlap_status(vquery.objs_dict)
